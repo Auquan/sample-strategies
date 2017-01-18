@@ -1,11 +1,11 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 import pandas as pd
 import numpy as np
-from pythonToolbox.toolbox import backtest
+from auquanToolbox.toolbox import backtest
 
 def settings():
-    exchange = "stocks"           # Exchange to download data for (nyse or nasdaq)
-    markets = ['A','AAPL','IBM','GOOG','C'] # Stocks to download data for. 
+    exchange = "nasdaq"           # Exchange to download data for (only nasdaq for now)
+    markets = ['AAPL','IBM','GOOG','C'] # Stocks to download data for. 
     date_start = '2015-01-03'   # Date to start the backtest
     date_end = '2016-11-06'     # Date to end the backtest
     lookback = 120               # Number of days you want historical data for
